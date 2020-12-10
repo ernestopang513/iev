@@ -1,0 +1,139 @@
+:root {
+    --c-principal: #040f58;
+    --c-secndario: #cb3419;
+    --c-principalClaro: #042e7e;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/*
+    Globales
+
+*/
+
+.contenedor {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: 60%;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        background-position: bottom;
+    }
+}
+
+.barra {
+    background-color: none;
+    padding: 40px 0;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.casiLogo {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: var(--c-principalClaro);
+    font-weight: bold;
+}
+
+.barra {
+    text-align: center;
+}
+
+.casiLogo span {
+    color: var(--c-secndario);
+}
+
+.navegacion a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.logo-medidas {
+    width: 30%;
+    border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+    .logo-medidas {
+        width: 15%;
+        border-radius: 5px;
+    }
+    .navegacion a {
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    .navegacion a:last-of-type {
+        margin-right: 0;
+    }
+    .navegacion a:hover {
+        color: var(--c-principal);
+    }
+}
+
+.separacion-flex {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.inferior-header a {
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 768px) {}
+
+.mision {
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .mision span.azul {
+        color: white;
+    }
+    .mision span.rojo {
+        color: white;
+    }
+}
+
+.informacion {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.informacion span {
+    color: #046ce7;
+    font-weight: bold;
+}
